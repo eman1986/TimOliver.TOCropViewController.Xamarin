@@ -1,6 +1,5 @@
 ﻿using Foundation;
 using System;
-using CoreGraphics;
 using TimOliver.TOCropViewController.Xamarin;
 using UIKit;
 
@@ -8,14 +7,18 @@ namespace TOCropViewController_Xamarin_Demo
 {
     public partial class ViewController : UIViewController, IUIImagePickerControllerDelegate
     {
+        private ImageCroppingDelegate _croppingDelegate;
+
         public ViewController(IntPtr handle) : base(handle)
         {
+            // Note: this .ctor should not contain any initialization logic.
         }
 
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
+
+            _croppingDelegate = new ImageCroppingDelegate();
         }
 
         public override void ViewWillAppear(bool animated)
@@ -24,6 +27,16 @@ namespace TOCropViewController_Xamarin_Demo
 
             btnCamera.TouchUpInside += BtnCameraOnTouchUpInside;
             btnChoosePhoto.TouchUpInside += BtnChoosePhotoOnTouchUpInside;
+            _croppingDelegate.OnFinishCropping = OnFinishCropping;
+        }
+
+        public override void ViewWillDisappear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            btnCamera.TouchUpInside -= BtnCameraOnTouchUpInside;
+            btnChoosePhoto.TouchUpInside -= BtnChoosePhotoOnTouchUpInside;
+            _croppingDelegate.OnFinishCropping = null;
         }
 
         private void ShowAlert(string title, string message, string btnOk = "Ok")
@@ -50,7 +63,7 @@ namespace TOCropViewController_Xamarin_Demo
                         AspectRatioLockEnabled = true,
                         AspectRatioPickerButtonHidden = true,
                         AspectRatioPreset = TOCropViewControllerAspectRatioPreset.Square,
-                        Delegate = new ImageCroppingDelegate(),
+                        Delegate = _croppingDelegate,
                         ResetAspectRatioEnabled = false
                     };
 
@@ -122,6 +135,11 @@ namespace TOCropViewController_Xamarin_Demo
             {
                 ShowAlert("Error", "Failed to access photo library");
             }
+        }
+
+        private void OnFinishCropping(object sender, UIImage e)
+        {
+            ivMain.Image = e;
         }
         #endregion
     }
