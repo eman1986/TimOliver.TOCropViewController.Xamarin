@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOCropViewController.Xamarin", "TOCropViewController.Xamarin\TOCropViewController.Xamarin.csproj", "{F57D284A-B91C-44D8-84C3-97A4498BF244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOCropViewController.Xamarin.Demo", "TOCropViewController-Xamarin-Demo\TOCropViewController.Xamarin.Demo.csproj", "{83932E3E-3C0E-4052-9B2A-6E2115F40A7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOCropViewController.Xamarin.Demo", "TOCropViewController.Xamarin.Demo\TOCropViewController.Xamarin.Demo.csproj", "{83932E3E-3C0E-4052-9B2A-6E2115F40A7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
