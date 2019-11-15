@@ -1,2 +1,2 @@
-# TimOliver.TOCropViewController.Xamarin
+# TOCropViewController
 Xamarin Binding for TOCropViewController
