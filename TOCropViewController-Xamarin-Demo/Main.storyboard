@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="197" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="40" y="20" width="240" height="240"/>
+                                <constraints>
+                                    <constraint id="206" firstAttribute="height" constant="240"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="199" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="40" y="288" width="240" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.27450980392156865" blue="0.49803921568627452" alpha="1"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="1" alpha="1"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="221" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="202" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="40" y="338" width="240" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.27450980392156865" blue="0.49803921568627452" alpha="1"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Choose Photo">
+                                    <color key="titleColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="1" alpha="1"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="236" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="207" firstItem="197" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom"/>
+                            <constraint id="208" firstItem="197" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24"/>
+                            <constraint id="210" firstAttribute="trailingMargin" secondItem="197" secondAttribute="trailing" constant="24"/>
+                            <constraint id="218" firstItem="199" firstAttribute="top" secondItem="197" secondAttribute="bottom" constant="28"/>
+                            <constraint id="219" firstItem="199" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24"/>
+                            <constraint id="220" firstAttribute="trailingMargin" secondItem="199" secondAttribute="trailing" constant="24"/>
+                            <constraint id="233" firstItem="202" firstAttribute="top" secondItem="199" secondAttribute="bottom" constant="20"/>
+                            <constraint id="234" firstItem="202" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24"/>
+                            <constraint id="235" firstAttribute="trailingMargin" secondItem="202" secondAttribute="trailing" constant="24"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ivMain" destination="197" id="name-outlet-197"/>
+                        <outlet property="btnCamera" destination="199" id="name-outlet-199"/>
+                        <outlet property="btnChoosePhoto" destination="202" id="name-outlet-202"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
