@@ -1,9 +1,8 @@
 using System;
 using CoreGraphics;
-using TimOliver.TOCropViewController.Xamarin;
 using UIKit;
 
-namespace TOCropViewController_Xamarin_Demo
+namespace TimOliver.TOCropViewController.Xamarin.Demo
 {
     public class ImageCroppingDelegate : TOCropViewControllerDelegate
     {

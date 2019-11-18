@@ -1,9 +1,8 @@
 ﻿using Foundation;
 using System;
-using TimOliver.TOCropViewController.Xamarin;
 using UIKit;
 
-namespace TOCropViewController_Xamarin_Demo
+namespace TimOliver.TOCropViewController.Xamarin.Demo
 {
     public partial class ViewController : UIViewController, IUIImagePickerControllerDelegate
     {
@@ -32,11 +31,10 @@ namespace TOCropViewController_Xamarin_Demo
 
         public override void ViewWillDisappear(bool animated)
         {
-            base.ViewWillAppear(animated);
+            base.ViewWillDisappear(animated);
 
             btnCamera.TouchUpInside -= BtnCameraOnTouchUpInside;
             btnChoosePhoto.TouchUpInside -= BtnChoosePhotoOnTouchUpInside;
-            _croppingDelegate.OnFinishCropping = null;
         }
 
         private void ShowAlert(string title, string message, string btnOk = "Ok")
@@ -84,7 +82,7 @@ namespace TOCropViewController_Xamarin_Demo
                         AspectRatioLockEnabled = true,
                         AspectRatioPickerButtonHidden = true,
                         AspectRatioPreset = TOCropViewControllerAspectRatioPreset.Square,
-                        Delegate = new ImageCroppingDelegate(),
+                        Delegate = _croppingDelegate,
                         ResetAspectRatioEnabled = false
                     };
 

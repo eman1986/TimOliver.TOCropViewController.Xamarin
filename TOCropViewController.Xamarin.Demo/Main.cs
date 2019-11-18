@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace TOCropViewController_Xamarin_Demo
+namespace TimOliver.TOCropViewController.Xamarin.Demo
 {
     public class Application
     {

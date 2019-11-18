@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleDisplayName</key>
-    <string>TOCropViewController_Xamarin_Demo</string>
+    <string>TOCropViewController.Xamarin.Demo</string>
     <key>CFBundleIdentifier</key>
-    <string>com.edlomonaco.TOCropViewController-Xamarin-Demo</string>
+    <string>com.demo.TOCropViewControllerDemo</string>
     <key>CFBundleShortVersionString</key>
     <string>1.0</string>
     <key>CFBundleVersion</key>

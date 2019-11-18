@@ -9,7 +9,7 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace TOCropViewController_Xamarin_Demo
+namespace TimOliver.TOCropViewController.Xamarin.Demo
 {
     [Register ("ViewController")]
     partial class ViewController

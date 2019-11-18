@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProjectGuid>{83932E3E-3C0E-4052-9B2A-6E2115F40A7B}</ProjectGuid>
+    <ProjectGuid>{16A29080-BF15-40D8-9823-F348D2F4660A}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{edc1b0fa-90cd-4038-8fad-98fe74adb368}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TOCropViewController_Xamarin_Demo</RootNamespace>
-    <AssemblyName>TOCropViewController_Xamarin_Demo</AssemblyName>
+    <RootNamespace>TimOliver.TOCropViewController.Xamarin.Demo</RootNamespace>
+    <AssemblyName>TimOliver.TOCropViewController.Xamarin.Demo</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
@@ -128,6 +128,7 @@
     <Compile Include="ImageCroppingDelegate.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="SceneDelegate.cs" />
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
