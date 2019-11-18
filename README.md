@@ -1,4 +1,7 @@
 # TOCropViewController
+
+![nuget](https://img.shields.io/nuget/dt/TimOliver.TOCropViewController.Xamarin)
+
 Xamarin Binding for [TOCropViewController](https://github.com/TimOliver/TOCropViewController)
 
 Based on TOCropViewController 2.5.2
