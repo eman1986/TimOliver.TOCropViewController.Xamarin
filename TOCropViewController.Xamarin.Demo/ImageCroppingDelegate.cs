@@ -8,11 +8,11 @@ namespace TimOliver.TOCropViewController.Xamarin.Demo
     {
         public EventHandler<UIImage> OnFinishCropping;
 
-        public override void DidCropImageToRect(TOCropViewController cropViewController, CGRect cropRect, nint angle)
+        public override void DidCropToImage(TOCropViewController cropViewController, UIImage image, CGRect cropRect, nint angle)
         {
-            cropViewController.PresentingViewController.DismissViewController(true, () =>
+            cropViewController.DismissViewController(true, () =>
             {
-                OnFinishCropping?.Invoke(this, cropViewController.Image);
+                OnFinishCropping?.Invoke(this, image);
             });
         }
     }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>TimOliver.TOCropViewController.Xamarin</id>
+    <version>2.5.2</version>
+    <title>TimOliver.TOCropViewController.Xamarin</title>
+    <description>Xamarin Binding for TOCropViewController</description>
+    <summary>Xamarin Binding for TOCropViewController</summary>
+    <authors>Ed Lomonaco</authors>
+    <owners>Ed Lomonaco</owners>
+    <projectUrl>https://github.com/eman1986/TimOliver.TOCropViewController.Xamarin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <tags>xamarin, ios, xamarin.ios, TOCropViewController, image-cropper, cropper</tags>
+    <releaseNotes>
+        Based off of TOCropViewController 2.5.2
+    </releaseNotes>
+    </metadata>
+    <files>
+        <file src="bin\Debug\TimOliver.TOCropViewController.Xamarin.dll" target="lib\xamarinios10" />
+        <file src="bin\Debug\TimOliver.TOCropViewController.Xamarin.pdb" target="lib\xamarinios10" />
+    </files>
+</package>

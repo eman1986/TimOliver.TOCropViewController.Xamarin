@@ -8,8 +8,6 @@
 	<string>com.demo.TOCropViewControllerDemo</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
@@ -73,5 +71,7 @@
 	<string>Demo App will use you camera to take a profile picture for your account; camera can be used for recognition.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Demo App will only upload and use photos you choose.</string>
+	<key>CFBundleVersion</key>
+	<string>100</string>
 </dict>
 </plist>

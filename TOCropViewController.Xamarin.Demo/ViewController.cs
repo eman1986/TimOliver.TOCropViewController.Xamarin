@@ -8,6 +8,8 @@ namespace TimOliver.TOCropViewController.Xamarin.Demo
     {
         private ImageCroppingDelegate _croppingDelegate;
 
+        private TOCropViewController _cropViewController;
+
         public ViewController(IntPtr handle) : base(handle)
         {
             // Note: this .ctor should not contain any initialization logic.
@@ -35,6 +37,7 @@ namespace TimOliver.TOCropViewController.Xamarin.Demo
 
             btnCamera.TouchUpInside -= BtnCameraOnTouchUpInside;
             btnChoosePhoto.TouchUpInside -= BtnChoosePhotoOnTouchUpInside;
+            _croppingDelegate.OnFinishCropping = null;
         }
 
         private void ShowAlert(string title, string message, string btnOk = "Ok")
@@ -55,17 +58,16 @@ namespace TimOliver.TOCropViewController.Xamarin.Demo
         {
             picker.DismissViewController(true, () =>
             {
-                var cropViewController =
-                    new TOCropViewController(TOCropViewCroppingStyle.Default, image)
-                    {
-                        AspectRatioLockEnabled = true,
-                        AspectRatioPickerButtonHidden = true,
-                        AspectRatioPreset = TOCropViewControllerAspectRatioPreset.Square,
-                        Delegate = _croppingDelegate,
-                        ResetAspectRatioEnabled = false
-                    };
+                _cropViewController = new TOCropViewController(TOCropViewCroppingStyle.Default, image)
+                {
+                    AspectRatioLockEnabled = true,
+                    AspectRatioPickerButtonHidden = true,
+                    AspectRatioPreset = TOCropViewControllerAspectRatioPreset.Square,
+                    Delegate = _croppingDelegate,
+                    ResetAspectRatioEnabled = false
+                };
 
-                PresentViewController(cropViewController, true, null);
+                PresentViewController(_cropViewController, true, null);
             });
         }
 
@@ -76,17 +78,16 @@ namespace TimOliver.TOCropViewController.Xamarin.Demo
 
             picker.DismissViewController(true, () =>
             {
-                var cropViewController =
-                    new TOCropViewController(TOCropViewCroppingStyle.Default, img)
-                    {
-                        AspectRatioLockEnabled = true,
-                        AspectRatioPickerButtonHidden = true,
-                        AspectRatioPreset = TOCropViewControllerAspectRatioPreset.Square,
-                        Delegate = _croppingDelegate,
-                        ResetAspectRatioEnabled = false
-                    };
+                _cropViewController = new TOCropViewController(TOCropViewCroppingStyle.Default, img)
+                {
+                    AspectRatioLockEnabled = true,
+                    AspectRatioPickerButtonHidden = true,
+                    AspectRatioPreset = TOCropViewControllerAspectRatioPreset.Square,
+                    Delegate = _croppingDelegate,
+                    ResetAspectRatioEnabled = false
+                };
 
-                PresentViewController(cropViewController, true, null);
+                PresentViewController(_cropViewController, true, null);
             });
         }
 
