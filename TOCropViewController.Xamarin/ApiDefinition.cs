@@ -177,6 +177,14 @@ namespace TimOliver.TOCropViewController.Xamarin
 		[Export ("resetButtonHidden")]
 		bool ResetButtonHidden { get; set; }
 
+		// @property (assign, nonatomic) BOOL doneButtonHidden;
+		[Export ("doneButtonHidden")]
+		bool DoneButtonHidden { get; set; }
+
+		// @property (assign, nonatomic) BOOL cancelButtonHidden;
+		[Export ("cancelButtonHidden")]
+		bool CancelButtonHidden { get; set; }
+
 		// @property (assign, nonatomic) BOOL resetButtonEnabled;
 		[Export ("resetButtonEnabled")]
 		bool ResetButtonEnabled { get; set; }
@@ -504,6 +512,14 @@ namespace TimOliver.TOCropViewController.Xamarin
 		// @property (assign, nonatomic) BOOL aspectRatioPickerButtonHidden;
 		[Export ("aspectRatioPickerButtonHidden")]
 		bool AspectRatioPickerButtonHidden { get; set; }
+
+		// @property (assign, nonatomic) BOOL doneButtonHidden;
+		[Export ("doneButtonHidden")]
+		bool DoneButtonHidden { get; set; }
+
+		// @property (assign, nonatomic) BOOL cancelButtonHidden;
+		[Export ("cancelButtonHidden")]
+		bool CancelButtonHidden { get; set; }
 
 		// @property (nonatomic, strong) NSArray * _Nullable activityItems;
 		[NullAllowed, Export ("activityItems", ArgumentSemantic.Strong)]
