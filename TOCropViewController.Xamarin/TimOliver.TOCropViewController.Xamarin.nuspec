@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>TimOliver.TOCropViewController.Xamarin</id>
-    <version>2.5.4</version>
+    <version>2.6.0</version>
     <title>TOCropViewController.Xamarin</title>
     <description>Xamarin Binding for TOCropViewController</description>
     <summary>Xamarin Binding for TOCropViewController</summary>
@@ -17,7 +17,7 @@
         </group>
     </dependencies>
     <releaseNotes>
-        Based off of TOCropViewController 2.5.4
+        Based off of TOCropViewController 2.6.0
     </releaseNotes>
     </metadata>
     <files>
