@@ -1,5 +1,7 @@
 # TOCropViewController
 
+![NuGet_Publish](https://github.com/TimOliver.TOCropViewController.Xamarin/workflows/NuGet_Publish/badge.svg?branch=master)
+
 ![nuget](https://img.shields.io/nuget/dt/TimOliver.TOCropViewController.Xamarin)
 
 Xamarin Binding for [TOCropViewController](https://github.com/TimOliver/TOCropViewController)
