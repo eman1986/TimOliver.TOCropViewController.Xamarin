@@ -93,6 +93,10 @@ namespace TimOliver.TOCropViewController.Xamarin
 		[Export ("doneTextButtonTitle")]
 		string DoneTextButtonTitle { get; set; }
 
+		// @property (copy, nonatomic) UIColor * _Null_unspecified doneButtonColor;
+		[Export ("doneButtonColor", ArgumentSemantic.Copy)]
+		UIColor DoneButtonColor { get; set; }
+
 		// @property (readonly, nonatomic, strong) UIButton * _Nonnull cancelTextButton;
 		[Export ("cancelTextButton", ArgumentSemantic.Strong)]
 		UIButton CancelTextButton { get; }
@@ -108,6 +112,14 @@ namespace TimOliver.TOCropViewController.Xamarin
 		// @property (copy, nonatomic) NSString * _Nonnull cancelTextButtonTitle;
 		[Export ("cancelTextButtonTitle")]
 		string CancelTextButtonTitle { get; set; }
+
+		// @property (copy, nonatomic) UIColor * _Nullable cancelButtonColor;
+		[NullAllowed, Export ("cancelButtonColor", ArgumentSemantic.Copy)]
+		UIColor CancelButtonColor { get; set; }
+
+		// @property (assign, nonatomic) BOOL showOnlyIcons;
+		[Export ("showOnlyIcons")]
+		bool ShowOnlyIcons { get; set; }
 
 		// @property (readonly, nonatomic, strong) UIButton * _Nonnull rotateCounterclockwiseButton;
 		[Export ("rotateCounterclockwiseButton", ArgumentSemantic.Strong)]
@@ -473,6 +485,18 @@ namespace TimOliver.TOCropViewController.Xamarin
 		[NullAllowed, Export ("cancelButtonTitle")]
 		string CancelButtonTitle { get; set; }
 
+		// @property (assign, nonatomic) BOOL showOnlyIcons;
+		[Export ("showOnlyIcons")]
+		bool ShowOnlyIcons { get; set; }
+
+		// @property (copy, nonatomic) UIColor * _Null_unspecified doneButtonColor;
+		[Export ("doneButtonColor", ArgumentSemantic.Copy)]
+		UIColor DoneButtonColor { get; set; }
+
+		// @property (copy, nonatomic) UIColor * _Nullable cancelButtonColor;
+		[NullAllowed, Export ("cancelButtonColor", ArgumentSemantic.Copy)]
+		UIColor CancelButtonColor { get; set; }
+
 		// @property (assign, nonatomic) BOOL showCancelConfirmationDialog;
 		[Export ("showCancelConfirmationDialog")]
 		bool ShowCancelConfirmationDialog { get; set; }
@@ -560,6 +584,10 @@ namespace TimOliver.TOCropViewController.Xamarin
 		// -(instancetype _Nonnull)initWithCroppingStyle:(TOCropViewCroppingStyle)style image:(UIImage * _Nonnull)image __attribute__((swift_name("init(croppingStyle:image:)")));
 		[Export ("initWithCroppingStyle:image:")]
 		IntPtr Constructor (TOCropViewCroppingStyle style, UIImage image);
+
+		// -(void)commitCurrentCrop;
+		[Export ("commitCurrentCrop")]
+		void CommitCurrentCrop ();
 
 		// -(void)resetCropViewLayout;
 		[Export ("resetCropViewLayout")]

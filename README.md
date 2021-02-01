@@ -6,7 +6,7 @@
 
 Xamarin Binding for [TOCropViewController](https://github.com/TimOliver/TOCropViewController)
 
-Based on TOCropViewController 2.5.3
+Based on TOCropViewController 2.6.0
 
 Refer to demo app on usage and also look at the official library for the full api.
 
